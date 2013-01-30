@@ -37,12 +37,22 @@
 
 <p>I am editing the gh-pages directly on my machine with Sublime Text 2 and hoping that when I save them and sync with git that they all bleedin' come together. We will see. It is nice to muck around with tech again. OK.</p>
 
+<p>So to grab my pages I use the code below:</p>
+
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>And after I edit and save something in the text editor I use:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git add .
+$ git commit m 'my comments on the change commited' 
+$ git push origin source
+</code></pre>
+
+<p>Then i wait a sec, reload the page at github and I am done.</p>
 
 <h3>Designer Templates</h3>
 
